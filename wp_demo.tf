@@ -1,10 +1,3 @@
-# terraform-aws-wordpress-ecs
-
-Terraform module which deploys Wordpress on AWS using ECS Fargate for compute, RDS for database and an application load balancer.
-
-## Example Usage
-
-```hcl
 provider "aws" {
   region  = "us-east-1"
 }
@@ -28,4 +21,3 @@ module "wordpress" {
    lb_subnet_ids = module.vpc.public_subnets
    db_subnet_group_subnet_ids = module.vpc.database_subnets
 }
-```
